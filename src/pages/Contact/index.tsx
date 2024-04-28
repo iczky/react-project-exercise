@@ -1,5 +1,6 @@
 import Navbar from "../../components/Navbar";
-import { PersonalInformation } from "./components";
+import { Footer } from "../Home/components";
+import { PersonalInformation, ContactInquiry } from "./components";
 import styled from "styled-components";
 
 const ContactContainer = styled.section`
@@ -12,10 +13,12 @@ const ContactContainer = styled.section`
 const Contact = () => {
   return (
     <>
+      <Navbar />
       <ContactContainer>
-        <Navbar />
         <PersonalInformation />
+        <ContactInquiry />
       </ContactContainer>
+      <Footer />
     </>
   );
 };

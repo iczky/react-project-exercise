@@ -6,18 +6,50 @@ const PersonalContainer = styled.div`
   display: flex;
   flex-direction: column;
   gap: 50px;
+
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  p,
+  h3 {
+    font-family: "Roboto", sans-serif;
+    font-size: 27px;
+    font-weight: 400;
+  }
 `;
 
 const ContactDetail = styled.div`
   display: flex;
   flex-direction: column;
   gap: 8px;
+
+  p {
+    font-size: 18px;
+  }
 `;
 
 const PersonalSocMed = styled.div`
   display: flex;
   flex-direction: column;
   gap: 6px;
+
+  p {
+    padding-bottom: 8px;
+    font-size: 18px;
+  }
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    padding-bottom: 6px;
+    font-size: 27px;
+  }
 `;
 
 const PersonalInformation = () => {
