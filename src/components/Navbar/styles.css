@@ -1,0 +1,28 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* margin: 26px 80px; */
+  width: 100%;
+  padding-top: 20px;
+  z-index: 1;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  gap: 40px;
+  padding-right: 80px;
+}
+
+nav p {
+  padding-left: 80px;
+}
+
+* {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+}

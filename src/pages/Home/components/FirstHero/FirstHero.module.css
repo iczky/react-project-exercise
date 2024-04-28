@@ -1,0 +1,62 @@
+.sectionStyle {
+  height: 100vh;
+  background-color: #c7d0d9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../../../../assets/image-people.png");
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: auto 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.sectionStyle h1 {
+  position: absolute;
+  color: #ffffff;
+  padding-top: 25%;
+  font-size: 150px;
+  white-space: nowrap;
+  animation: walk 10s linear infinite;
+}
+
+@keyframes walk {
+  0% {
+    transform: translateX(-100%); /* Start from left edge of viewport */
+  }
+  100% {
+    transform: translateX(100%); /* End at right edge of viewport */
+  }
+}
+
+.btncontainer {
+  display: flex;
+  justify-content: end;
+  right: -310px;
+  width: auto;
+  position: absolute;
+  transition: right 0.8s ease;
+}
+
+.btncontainer:hover {
+  right: -50px;
+  cursor: pointer;
+}
+
+.btnhero {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 22px 80px 22px 15px;
+  background-color: #000000;
+  border-radius: 60px;
+  color: #ffffff;
+}
+
+.btnhero p {
+  font-size: 40px;
+  font-weight: 600;
+  margin: 0;
+  padding: 0;
+}
